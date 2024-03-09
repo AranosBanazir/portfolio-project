@@ -3,15 +3,17 @@
     --text-color: cyan;
     --bigger: 200px 400px;
     --smaller: 100px 200px;
+    --section-color: linear-gradient(from bottom, black, blue)
 }
+html {
+    scroll-behavior: smooth;
+  }
 
 ::placeholder{
     color: var(--text-color);
     padding-left: 10px;
 }
-html{
-    height: 100%;
-}
+
 body{
     background-color: rgb(54, 62, 62);
     font-size: 16px;
@@ -39,6 +41,7 @@ body{
 #pfp-pic{
    height: 175px;
    width: 150px;
+   margin: 5px 5px -5px 5px;
 }
 
 header{
@@ -50,8 +53,9 @@ header{
   font-size: 200%;
 }
 
-h1::before{
-    content:attr('&#10100;')
+h1::before, h1::after{
+    margin: 0px 5px;
+    content: '\2728';
 }
 
 a{
@@ -72,6 +76,13 @@ header a:hover{
     text-decoration: underline;
     color: white;
     text-shadow: -2px 1px var(--text-color);
+}
+
+h2{
+    background-color: rgba(87, 87, 245, 0.733);
+    /* width: 25%; */
+    margin: 25px 25px;
+    border-radius: 10px;
 }
 
 main{
@@ -101,6 +112,14 @@ main{
     /* border: 3px solid black; */
 }
 
+h2{
+    text-align: center;
+    font-size: 175%;
+}
+
+#about-me p{
+    font-size: 150%;
+}
 
 #projects{
     height: 100%;
@@ -181,7 +200,8 @@ main{
 }
 
 #contact-info{
-    width: 33%
+    width: 33%;
+    margin-bottom: 100px;
 }
 #contact-form{
     display: flex;
@@ -216,7 +236,7 @@ footer{
     display: flex;
     background-color: dimgray;
     border: 3px 3px 2px black;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: stretch;
     width: 100%;
     
@@ -233,9 +253,6 @@ footer{
 
 
 @media (max-width: 760) {
-    .section-container{
-        width: 50%;
-    }
 }
 
 @media (max-width: 320) {
