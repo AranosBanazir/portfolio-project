@@ -12,6 +12,7 @@ body{
     background-color: rgb(54, 62, 62);
     font-size: 16px;
     color: var(--text-color);
+
 }
 
 #header-container{
@@ -101,7 +102,6 @@ main{
 }
 
 
-
 .project-container{
     height: 100px;
     width: 200px; 
@@ -121,6 +121,18 @@ main{
     position: absolute;
     bottom: 0px;
     border-radius: 10px;
+}
+
+.hidden-options{
+    display: none;
+    position: absolute;
+    left: 75%;
+} 
+
+.project-container:hover .hidden-options{
+    display: block;
+    text-decoration: underline;
+
 }
 
 .project-container img{
@@ -144,4 +156,12 @@ main{
 #first{
     height: 200px;
     width: 400px;
+}
+
+@media (max-width: 760) {
+    
+}
+
+@media (max-width: 460) {
+    
 }
