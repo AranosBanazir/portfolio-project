@@ -19,9 +19,9 @@
         </div>
         <header>
             <div id="contact-container">
-                <a href="#">About me</a>
-                <a href="#">My Projects</a>
-                <a href="#">Contact me</a>
+                <a href="#about-me">About me</a>
+                <a href="#projects">My Projects</a>
+                <a href="#contact-me">Contact me</a>
             </div>
         </header>
     </div>
@@ -34,17 +34,17 @@
         <div class="section-container">
             <div id="about-me">
                 <p>
-                    My name is Caleb Saiia. I am a student through the edX bootcamp program, and am currently sudying to be a fullstack web developer.
+                    My name is Caleb Saiia. I am a student through the edX bootcamp program, and am currently sudying to be a fullstack web developer. I have worked in many different job atmospheres and teams. I spent sevearl years in an IT position for a local school system handling various projects.
                 </p>
             </div>
 
 <!-- TODO Update info with actual projects -->
             <div id="projects">
                 <div id="first" class="project-container">
-                    <a target="_blank" href="https://www.google.com">
+                    <a target="_blank" href="#">
                     <img src="./assets/images/css-refactor-img.png" alt = "Horiseon landing page screenshot."/>
                     </a>
-                    <a target="_blank" href="https://www.youtube.com">
+                    <a target="_blank" href="#">
                     <p>CSS Refactoring (HTML/CSS)</p>
                     </a>
                     <p class="hidden-options">
@@ -54,10 +54,10 @@
                 </div>
 
                 <div class="project-container">
-                    <a target="_blank" href="https://www.google.com">
+                    <a target="_blank" href="#">
                         <img src="./assets/images/Project-1-placeholder.jpg" alt = "Horiseon landing page screenshot."/>
                         </a>
-                        <a target="_blank"href="https://www.youtube.com">
+                        <a target="_blank"href="#">
                         <p>Work in Progress</p>
                         </a>
                         <p class="hidden-options">
@@ -67,10 +67,10 @@
                 </div>
 
                 <div class="project-container">
-                    <a target="_blank" href="https://www.google.com">
+                    <a target="_blank" href="https://aranosbanazir.github.io/code-refactor-challenge/">
                         <img src="./assets/images/Project-2-placeholder.jpg" alt = "Horiseon landing page screenshot."/>
                         </a>
-                        <a target="_blank" href="https://www.youtube.com">
+                        <a target="_blank" href="#">
                         <p>Work in Progress</p>
                         </a>
                         <p class="hidden-options">
@@ -79,10 +79,10 @@
                             </p>
                 </div>
                 <div class="project-container">
-                    <a target="_blank" href="https://www.google.com">
+                    <a target="_blank" href="#">
                         <img src="./assets/images/Project-3-placeholder.jpg" alt = "Horiseon landing page screenshot."/>
                         </a>
-                        <a target="_blank" href="https://www.youtube.com">
+                        <a target="_blank" href="#">
                         <p>Work in Progress</p>
                         </a>
                         <p class="hidden-options">
@@ -93,13 +93,47 @@
             </div>
         
             <div id="contact-me">
-
+                <form id="contact-form">
+                    <label for="name-input">Name:</label>
+                    <input placeholder="John Doe" autocomplete="on" type="text" name="name" id="name-input" required>
+                    <label for="email-input">Email:</label>
+                    <input placeholder="yourname@email.com" autocomplete="on" type="email" name="email" id="email-input" required>
+                    <label for="text-area">Comments:</label>
+                    <textarea placeholder="We love this website!" id="text-area" required></textarea>
+                    <button>Send Comments</button>
+                </form>
+                <div id="contact-info">
+                <p>
+                    You can contact me using any of the below methods or by filling out the form to the left with your information and I will get back to you!
+                    <ul>
+                        <br>
+                        <li class="info">Email: myname@gmail.com</li>
+                        <li class="info">Phone: +1(867)-5309</li>
+                        <li class="info">Fax: +1(867)-5309</li>
+                    </ul>
+                </p>
+                </div>
             </div>
         </div>
     </main>
 
-    <footer>
-        &copy; 2024
-    </footer>
+    
 </body>
+<footer>
+    <p>
+    &copy; 2024
+    </p>
+    <!-- containter for image links -->
+
+
+    <!-- github img -->
+    
+  <a href="https://github.com/AranosBanazir"><img class= "contact-img" src="./assets/images/github.webp" alt ="github logo"/>
+  </a>
+
+  <!-- linkedin -->
+  <a href="https://www.linkedin.com/in/caleb-saiia-9152992b5/"><img id = "lnkd" class= "contact-img" src="./assets/images/linkedin.png" alt ="Linkedin logo"/>
+  </a>
+  <!-- personal pages -->
+</footer>
 </html>

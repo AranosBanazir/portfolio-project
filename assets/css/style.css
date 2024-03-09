@@ -5,6 +5,10 @@
     --smaller: 100px 200px;
 }
 
+::placeholder{
+    color: var(--text-color);
+    padding-left: 10px;
+}
 html{
     height: 100%;
 }
@@ -46,6 +50,9 @@ header{
   font-size: 200%;
 }
 
+h1::before{
+    content:attr('&#10100;')
+}
 
 a{
     text-decoration: none;
@@ -88,6 +95,7 @@ main{
 }
 #about-me{
     height: 20%;
+    margin-left: 20px;
     /* border: 3px solid black; */
 }
 
@@ -109,6 +117,7 @@ main{
     background-size: contain;
     border: 2px solid var(--text-color);
     margin: 10px 10px;
+    border-radius: 3px;
 }
 
 .project-container a{
@@ -122,6 +131,12 @@ main{
     bottom: 0px;
     border-radius: 10px;
 }
+
+.project-container img:active{
+    cursor: grabbing;
+    border: 3px solid var(--text-color);
+}
+
 
 .hidden-options{
     display: none;
@@ -148,7 +163,10 @@ main{
 }
 
 #contact-me{
-    height: 20%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     /* border: 3px solid black; */
 
 }
@@ -158,10 +176,66 @@ main{
     width: 400px;
 }
 
-@media (max-width: 760) {
+#contact-info{
+    width: 33%
+}
+#contact-form{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+
+#contact-form label::after{
+    content:"*";
+    color: red;
+}
+
+#contact-form input,textarea{
+    border: 2px solid var(--text-color);
+    color: var(--text-color);
+    background-color: dimgray;
+}
+
+button{
+    margin-top:5px;
+    border-radius: 20px;
+    color: var(--text-color);
+    border: 2px solid var(--text-color);
+    background-color: var(--background);
     
 }
 
-@media (max-width: 460) {
+
+footer{
+    display: flex;
+    background-color: dimgray;
+    border: 3px 3px 2px black;
+    justify-content: center;
+    align-items: stretch;
+    width: 100%;
     
+}
+
+
+
+.contact-img{
+    height: 100%;
+    width: 50px;
+
+}
+
+
+
+@media (max-width: 760) {
+    .section-container{
+        width: 50%;
+    }
+}
+
+@media (max-width: 460) {
+    .section-container{
+        width: 30%
+    }
 }
