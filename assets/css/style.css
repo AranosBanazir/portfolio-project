@@ -1,7 +1,17 @@
+:root{
+    --background: rgb(54, 62, 62);
+    --text-color: cyan;
+    --bigger: 200px 400px;
+    --smaller: 100px 200px;
+}
+
+html{
+    height: 100%;
+}
 body{
     background-color: rgb(54, 62, 62);
     font-size: 16px;
-    color: cyan;
+    color: var(--text-color);
 }
 
 #header-container{
@@ -22,7 +32,7 @@ body{
     align-self: flex-start
 }
 #pfp-pic{
-   height: 150px;
+   height: 175px;
    width: 150px;
 }
 
@@ -35,15 +45,26 @@ header{
   font-size: 200%;
 }
 
+
+a{
+    text-decoration: none;
+}
+
 header a{
     font-size: 20px;
     text-align: right;
     padding: 5px;
     margin: 5px 0px;
     text-decoration: none;
-    color: cyan;
+    color: var(--text-color);
     
 } 
+
+header a:hover{
+    text-decoration: underline;
+    color: white;
+    text-shadow: -2px 1px var(--text-color);
+}
 
 main{
     display: flex;
@@ -53,31 +74,74 @@ main{
 
 .section-container{
     height: 500px;
-    width: auto;
+    width: 100%;
     display: flex;
-    border: 10px solid black;
+    /* border: 10px solid black; */
     flex-direction: column;
 }
 
+#spacer{
+    border: 2px solid black;
+    margin-bottom: 10px;
+    width: 100%;
+}
 #about-me{
     height: 20%;
-    border: 3px solid black;
+    /* border: 3px solid black; */
 }
 
 
 #projects{
     height: 60%;
-    border: 3px solid black;
-
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
 }
 
-#projects img{
+
+
+.project-container{
+    height: 100px;
+    width: 200px; 
+    position: relative;
+    background-size: contain;
+    border: 2px solid var(--text-color);
+    margin: 10px 10px;
+}
+
+.project-container a{
+    color: var(--text-color);
+}
+
+.project-container p{
+    background-color: var(--background);
+    padding: 5px;
+    position: absolute;
+    bottom: 0px;
+    border-radius: 10px;
+}
+
+.project-container img{
+    height: 100%;
+    width: 100%;
+}
+
+
+.project-container:hover{
+    box-shadow: 10px 10px 8px black;
     height: 200px;
     width: 400px;
-
 }
+
 #contact-me{
     height: 20%;
-    border: 3px solid black;
+    /* border: 3px solid black; */
 
+}
+
+#first{
+    height: 200px;
+    width: 400px;
 }
