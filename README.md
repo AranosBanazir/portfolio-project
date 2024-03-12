@@ -7,7 +7,7 @@ This website is a place to direct future employers to see a few of my better pro
 
 ## Installation
 
-No installation is required. To access the website just click [here]("https://aranosbanazir.github.io/portfolio-project/").
+No installation is required. To access the website just click [here]("https://aranosbanazir.github.io/portfolio-project").
 
 ## Usage
 The usage of the site is fairly self-explanatory. Using the navigation buttons in the header, you can scroll to specific areas of the page. By hovering over the images you are given the option to view either the deployed site or the repository for the project. Alternatively, you can click on the images themselves and be directed to the deployed project. If you fill out the form in the contact section with your information, then I can get back to you in response to your comments. I can be reached at any of the listed forms of communication as well.
