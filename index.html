@@ -17,12 +17,13 @@
         <div id="h1-container">
             <h1>My Portfolio Site</h1>
         </div>
+        <!-- Navigation to individual sections -->
         <header>
-            <div id="contact-container">
-                <a href="#about-me">About me</a>
-                <a href="#projects">My Projects</a>
-                <a href="#contact-me">Contact me</a>
-            </div>
+            <nav id="contact-container">
+                <a href="#me">About me</a>
+                <a href="#my-projects">My Projects</a>
+                <a href="#contact">Contact me</a>
+            </nav>
         </header>
     </div>
     <div id="spacer"></div>
@@ -32,7 +33,7 @@
 
         
         <div class="section-container">
-            <div><h2>About me</h2></div>
+            <div id="me"><h2>About me</h2></div>
             <section id="about-me">
                 <p>
                     My name is Caleb Saiia. I am a student through the edX bootcamp program, and am currently sudying to be a fullstack web developer. I have worked in many different job atmospheres and teams. I spent several years in an IT position for a local school system handling various projects.
@@ -41,7 +42,7 @@
 
 <!-- TODO Update info with actual projects -->
 <!-- Project images -->
-        <div><h2>My Projects</h2></div>
+        <div><h2 id="my-projects">My Projects</h2></div>
             <section id="projects">
                 
                 <div id="first" class="project-container" >
@@ -95,7 +96,7 @@
                             </p>
                 </div>
             </section>
-        <div><h2>Contact Me</h2></div>
+        <div><h2 id="contact">Contact Me</h2></div>
             <section id="contact-me">
                 
                 <form id="contact-form">

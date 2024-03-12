@@ -5,6 +5,7 @@
     --smaller: 100px 200px;
     --section-color: linear-gradient(from bottom, black, blue)
 }
+
 html {
     scroll-behavior: smooth;
   }
@@ -15,7 +16,6 @@ html {
 }
 
 body{
-    /* background-color: var(--background) */
     background: linear-gradient(to bottom left, rgb(47, 112, 112), var(--background));
     font-size: 16px;
     color: var(--text-color);
@@ -81,7 +81,6 @@ header a:hover{
 
 h2{
     background-color: rgba(87, 87, 245, 0.733);
-    /* width: 25%; */
     margin: 25px 25px;
     border-radius: 10px;
 }
@@ -93,10 +92,8 @@ main{
 }
 
 .section-container{
-    /* height: 1000px; */
     width: 100%;
     display: flex;
-    /* border: 10px solid black; */
     flex-direction: column;
 }
 
@@ -106,11 +103,9 @@ main{
     width: 100%;
 }
 #about-me{
-    /* height: 20%; */
     width: 75%;
     align-self: center;
     margin-left: 20px;
-    /* border: 3px solid black; */
 }
 
 h2{
@@ -123,7 +118,6 @@ h2{
 }
 
 #projects{
-    /* height: 100%; */
     width: 25%;
     display: flex;
     flex-direction: row;
@@ -135,7 +129,6 @@ h2{
 
 
 .project-container{
-    /* height: 100px; */
     width: 200px; 
     position: relative;
     background-size: contain;
@@ -187,11 +180,9 @@ h2{
 }
 
 #contact-me{
-    /* height: auto; */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* border: 3px solid black; */
 
 }
 
@@ -199,10 +190,6 @@ h2{
     height: 200px;
     width: 400px;
 }
-/* #first{
-    height: 200px;
-    width: 400px;
-} */
 
 #contact-info{
     width: 33%;
