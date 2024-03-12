@@ -15,7 +15,8 @@ html {
 }
 
 body{
-    background-color: rgb(54, 62, 62);
+    /* background-color: var(--background) */
+    background: linear-gradient(to bottom left, rgb(47, 112, 112), var(--background));
     font-size: 16px;
     color: var(--text-color);
 
@@ -92,7 +93,7 @@ main{
 }
 
 .section-container{
-    height: 1000px;
+    /* height: 1000px; */
     width: 100%;
     display: flex;
     /* border: 10px solid black; */
@@ -194,10 +195,14 @@ h2{
 
 }
 
-#first{
+.project-container:first-child{
     height: 200px;
     width: 400px;
 }
+/* #first{
+    height: 200px;
+    width: 400px;
+} */
 
 #contact-info{
     width: 33%;
